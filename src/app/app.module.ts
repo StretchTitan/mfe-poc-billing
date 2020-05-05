@@ -14,7 +14,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [],
+  // Uncomment this line and run ng serve to only run this app locally
+  // bootstrap: [AppComponent],
   entryComponents: [AppComponent],
 })
 
