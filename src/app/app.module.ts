@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
   ],
   providers: [],
   // Uncomment this line and run ng serve to only run this app locally
-  bootstrap: [AppComponent],
+  //bootstrap: [AppComponent],
   entryComponents: [AppComponent],
 })
 
