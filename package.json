@@ -6,6 +6,7 @@
     "start": "live-server dist/mfe-poc-billing --port=4202",
     "build": "ng build --single-bundle true --output-hashing none --watch true",
     "build:prod": "ng build --prod --single-bundle true --output-hashing none --vendor-chunk false --watch true",
+    "analyze-bundle": "ng build --output-hashing none --stats-json && webpack-bundle-analyzer dist/mfe-poc-billing/stats.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -47,6 +48,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "webpack-bundle-analyzer": "^3.7.0"
   }
 }
