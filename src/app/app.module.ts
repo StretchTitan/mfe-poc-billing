@@ -5,10 +5,12 @@ import { createCustomElement } from '@angular/elements';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PushPipe } from './push.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PushPipe
   ],
   imports: [
     BrowserModule,
@@ -16,7 +18,9 @@ import { AppComponent } from './app.component';
     HttpClientModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [
+    PushPipe
+  ],
   // Uncomment this line and run ng serve to only run this app locally
   // bootstrap: [AppComponent],
   entryComponents: [AppComponent],
