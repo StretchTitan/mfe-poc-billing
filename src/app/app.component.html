@@ -1,5 +1,7 @@
 <div class="billing-app">
-    <mfe-poc-homepage-widget></mfe-poc-homepage-widget>
+    <ng-template #error>Loading failed...</ng-template>
+    <ng-template #loading>Loading...</ng-template>
+    <mfe-card *axLazyElement="'http://local.spectrum-poc.net:4203/shared-card.js'; loadingTemplate: loading; errorTemplate: error"></mfe-card>
     <h4>This is the <span style="color: darkred">MFE-POC-BILLING</span> app</h4>
     <p>Welcome to the billing page!</p>
     <p *ngIf="(nameState$ | push) as n">Name: {{n.firstName}} {{n.lastName}}</p>
