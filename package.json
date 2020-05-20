@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "live-server dist/mfe-poc-billing --port=4202",
+    "start": "live-server dist/mfe-poc-billing --port=4202 --cors",
     "build": "ng build --single-bundle true --output-hashing none --watch true",
     "build:prod": "ng build --prod --single-bundle true --output-hashing none --vendor-chunk false --watch true",
     "analyze-bundle": "ng build --output-hashing none --stats-json && webpack-bundle-analyzer dist/mfe-poc-billing/stats.json",
@@ -13,6 +13,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-extensions/elements": "8.11.2",
     "@angular/animations": "~8.2.14",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
